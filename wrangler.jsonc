@@ -1,0 +1,25 @@
+{
+  // Cloudflare Workers deploy config for this TanStack Start (Nitro) app.
+  // Only used by `wrangler deploy` / Cloudflare Workers Builds.
+  // Lovable preview + Lovable hosting ignore this file completely.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "upoharkabbo",
+  "main": "./dist/server/index.mjs",
+  "compatibility_date": "2025-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    // Client build output (immutable hashed assets + public/ files).
+    "directory": "./dist/client",
+    // Anything not found as a static file falls through to the SSR worker.
+    "binding": "ASSETS",
+    "not_found_handling": "none",
+    "run_worker_first": false
+  },
+  "observability": {
+    "enabled": true
+  },
+  "workers_dev": true
+  // Secrets/env (SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, SUPABASE_SERVICE_ROLE_KEY,
+  // R2_*, CRON_HOOK_SECRET, VITE_* build-time vars, etc.) are configured in the
+  // Cloudflare dashboard or via `wrangler secret put` — never committed here.
+}

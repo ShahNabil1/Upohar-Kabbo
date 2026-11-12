@@ -1,0 +1,43 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# AI answer engines (AEO) — explicitly welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: *
+Allow: /
+# /auth is intentionally crawlable (it carries noindex) so Safe Browsing and
+# Search Console can verify it is our own branded staff login page.
+Disallow: /admin
+Disallow: /cart
+Disallow: /checkout
+Disallow: /order/
+Disallow: /invoice/
+Disallow: /search
+
+Sitemap: https://upoharkabbo.com/sitemap.xml

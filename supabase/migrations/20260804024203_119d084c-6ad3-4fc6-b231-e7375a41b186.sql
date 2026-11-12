@@ -1,0 +1,1 @@
+ALTER TABLE public.order_consignments ADD COLUMN IF NOT EXISTS total_cost numeric;

@@ -1,0 +1,1831 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2026-10-21T18:31:29.164Z",
+  "containerVersion": {
+    "accountId": "0",
+    "containerId": "0",
+    "containerVersionId": "0",
+    "name": "Upoharkabbo Tracking Template",
+    "description": "GA4 + Meta Pixel + TikTok Pixel + Microsoft Clarity, wired to the dataLayer events pushed by src/lib/tracking.ts. Edit only the four CFG - * constant variables after import.",
+    "container": {
+      "accountId": "0",
+      "containerId": "0",
+      "name": "Upoharkabbo Tracking Template",
+      "publicId": "GTM-XXXXXXX",
+      "usageContext": [
+        "WEB"
+      ],
+      "fingerprint": "0"
+    },
+    "tag": [
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "GA4 - Configuration",
+        "type": "googtag",
+        "tagId": "34",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "tagId",
+            "value": "{{CFG - GA4 Measurement ID}}"
+          },
+          {
+            "type": "LIST",
+            "key": "configSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "send_page_view"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "true"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": [
+          "33"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "GA4 - view_item",
+        "type": "gaawe",
+        "tagId": "35",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "view_item"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "true"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "getEcommerceDataFrom",
+            "value": "dataLayer"
+          },
+          {
+            "type": "TAG_REFERENCE",
+            "key": "measurementId",
+            "value": "GA4 - Configuration"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "surface"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - surface}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "event_id"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - event_id}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": [
+          "24"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "GA4 - view_item_list",
+        "type": "gaawe",
+        "tagId": "36",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "view_item_list"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "true"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "getEcommerceDataFrom",
+            "value": "dataLayer"
+          },
+          {
+            "type": "TAG_REFERENCE",
+            "key": "measurementId",
+            "value": "GA4 - Configuration"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "surface"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - surface}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "event_id"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - event_id}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": [
+          "25"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "GA4 - add_to_cart",
+        "type": "gaawe",
+        "tagId": "37",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "add_to_cart"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "true"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "getEcommerceDataFrom",
+            "value": "dataLayer"
+          },
+          {
+            "type": "TAG_REFERENCE",
+            "key": "measurementId",
+            "value": "GA4 - Configuration"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "surface"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - surface}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "event_id"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - event_id}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": [
+          "26"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "GA4 - begin_checkout",
+        "type": "gaawe",
+        "tagId": "38",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "begin_checkout"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "true"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "getEcommerceDataFrom",
+            "value": "dataLayer"
+          },
+          {
+            "type": "TAG_REFERENCE",
+            "key": "measurementId",
+            "value": "GA4 - Configuration"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "surface"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - surface}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "event_id"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - event_id}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": [
+          "27"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "GA4 - add_payment_info",
+        "type": "gaawe",
+        "tagId": "39",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "add_payment_info"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "true"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "getEcommerceDataFrom",
+            "value": "dataLayer"
+          },
+          {
+            "type": "TAG_REFERENCE",
+            "key": "measurementId",
+            "value": "GA4 - Configuration"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "surface"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - surface}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "event_id"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - event_id}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": [
+          "28"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "GA4 - purchase",
+        "type": "gaawe",
+        "tagId": "40",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "purchase"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "true"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "getEcommerceDataFrom",
+            "value": "dataLayer"
+          },
+          {
+            "type": "TAG_REFERENCE",
+            "key": "measurementId",
+            "value": "GA4 - Configuration"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "surface"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - surface}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "event_id"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - event_id}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": [
+          "29"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "GA4 - search",
+        "type": "gaawe",
+        "tagId": "41",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "search"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "true"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "getEcommerceDataFrom",
+            "value": "dataLayer"
+          },
+          {
+            "type": "TAG_REFERENCE",
+            "key": "measurementId",
+            "value": "GA4 - Configuration"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "surface"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - surface}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "event_id"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - event_id}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": [
+          "31"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "GA4 - contact",
+        "type": "gaawe",
+        "tagId": "42",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "generate_lead"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "true"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "getEcommerceDataFrom",
+            "value": "dataLayer"
+          },
+          {
+            "type": "TAG_REFERENCE",
+            "key": "measurementId",
+            "value": "GA4 - Configuration"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "surface"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - surface}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "event_id"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - event_id}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": [
+          "32"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "GA4 - scroll_depth",
+        "type": "gaawe",
+        "tagId": "43",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "scroll"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "true"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "getEcommerceDataFrom",
+            "value": "dataLayer"
+          },
+          {
+            "type": "TAG_REFERENCE",
+            "key": "measurementId",
+            "value": "GA4 - Configuration"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "percent_scrolled"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - percent_scrolled}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "surface"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - surface}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "event_id"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DL - event_id}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": [
+          "30"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "Meta Pixel - Base",
+        "type": "html",
+        "tagId": "44",
+        "priority": {
+          "type": "INTEGER",
+          "key": "priority",
+          "value": "100"
+        },
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?\nn.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;\nn.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;\nt.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,\ndocument,'script','https://connect.facebook.net/en_US/fbevents.js');\n(function () {\n  var _xid = {{DL - external_id}};\n  var _am = {};\n  if (typeof _xid === 'string' && _xid) _am.external_id = _xid;\n  fbq('init', \"{{CFG - Meta Pixel ID}}\", _am);\n  fbq('track', 'PageView');\n})();\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "33"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "Meta Pixel - ViewContent",
+        "type": "html",
+        "tagId": "45",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function () {\n  if (!window.fbq) return;\n  var _arr = function (v) { return Array.isArray(v) ? v : []; };\n  var _str = function (v) { return (typeof v === 'string' || typeof v === 'number') && String(v).length ? String(v) : undefined; };\n  var _num = function (v) { var n = Number(v); return isFinite(n) ? n : 0; };\n  var _c = _arr({{DL - contents}});\n  var _ids = _arr({{DL - content_ids}});\n  var _eid = _str({{DL - event_id}});\n  var _xid = _str({{DL - external_id}});\n  var _ph = (_str({{DL - customer_phone}}) || '').replace(/\\D/g, '');\n  if (_ph.indexOf('01') === 0 && _ph.length === 11) _ph = '88' + _ph;\n  if (_ph.length < 11) _ph = '';\n  // Never re-initialize the Pixel here: a second init call without full user\n  // data makes it drop the click id (fbc) attached from the URL/cookies.\n  // Advanced matching happens once in the Base tag; hashed phone goes via CAPI.\n  var _p = {\n    content_type: _str({{DL - content_type}}) || 'product',\n    content_ids: _ids,\n    contents: _c.map(function (i) { return { id: String(i.id || i.content_id || ''), quantity: _num(i.quantity) || 1, item_price: _num(i.item_price || i.price) }; }),\n    num_items: _num({{DL - num_items}}),\n    value: _num({{DL - value}}),\n    currency: _str({{DL - currency}}) || 'BDT'\n  };\n  var _oid = _str({{DL - order_number}}) || _str({{DL - transaction_id}});\n  if (_oid) _p.order_id = _oid;\n  fbq('track', \"ViewContent\", _p, _eid ? { eventID: _eid } : {});\n})();\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "24"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "Meta Pixel - AddToCart",
+        "type": "html",
+        "tagId": "46",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function () {\n  if (!window.fbq) return;\n  var _arr = function (v) { return Array.isArray(v) ? v : []; };\n  var _str = function (v) { return (typeof v === 'string' || typeof v === 'number') && String(v).length ? String(v) : undefined; };\n  var _num = function (v) { var n = Number(v); return isFinite(n) ? n : 0; };\n  var _c = _arr({{DL - contents}});\n  var _ids = _arr({{DL - content_ids}});\n  var _eid = _str({{DL - event_id}});\n  var _xid = _str({{DL - external_id}});\n  var _ph = (_str({{DL - customer_phone}}) || '').replace(/\\D/g, '');\n  if (_ph.indexOf('01') === 0 && _ph.length === 11) _ph = '88' + _ph;\n  if (_ph.length < 11) _ph = '';\n  // Never re-initialize the Pixel here: a second init call without full user\n  // data makes it drop the click id (fbc) attached from the URL/cookies.\n  // Advanced matching happens once in the Base tag; hashed phone goes via CAPI.\n  var _p = {\n    content_type: _str({{DL - content_type}}) || 'product',\n    content_ids: _ids,\n    contents: _c.map(function (i) { return { id: String(i.id || i.content_id || ''), quantity: _num(i.quantity) || 1, item_price: _num(i.item_price || i.price) }; }),\n    num_items: _num({{DL - num_items}}),\n    value: _num({{DL - value}}),\n    currency: _str({{DL - currency}}) || 'BDT'\n  };\n  var _oid = _str({{DL - order_number}}) || _str({{DL - transaction_id}});\n  if (_oid) _p.order_id = _oid;\n  fbq('track', \"AddToCart\", _p, _eid ? { eventID: _eid } : {});\n})();\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "26"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "Meta Pixel - InitiateCheckout",
+        "type": "html",
+        "tagId": "47",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function () {\n  if (!window.fbq) return;\n  var _arr = function (v) { return Array.isArray(v) ? v : []; };\n  var _str = function (v) { return (typeof v === 'string' || typeof v === 'number') && String(v).length ? String(v) : undefined; };\n  var _num = function (v) { var n = Number(v); return isFinite(n) ? n : 0; };\n  var _c = _arr({{DL - contents}});\n  var _ids = _arr({{DL - content_ids}});\n  var _eid = _str({{DL - event_id}});\n  var _xid = _str({{DL - external_id}});\n  var _ph = (_str({{DL - customer_phone}}) || '').replace(/\\D/g, '');\n  if (_ph.indexOf('01') === 0 && _ph.length === 11) _ph = '88' + _ph;\n  if (_ph.length < 11) _ph = '';\n  // Never re-initialize the Pixel here: a second init call without full user\n  // data makes it drop the click id (fbc) attached from the URL/cookies.\n  // Advanced matching happens once in the Base tag; hashed phone goes via CAPI.\n  var _p = {\n    content_type: _str({{DL - content_type}}) || 'product',\n    content_ids: _ids,\n    contents: _c.map(function (i) { return { id: String(i.id || i.content_id || ''), quantity: _num(i.quantity) || 1, item_price: _num(i.item_price || i.price) }; }),\n    num_items: _num({{DL - num_items}}),\n    value: _num({{DL - value}}),\n    currency: _str({{DL - currency}}) || 'BDT'\n  };\n  var _oid = _str({{DL - order_number}}) || _str({{DL - transaction_id}});\n  if (_oid) _p.order_id = _oid;\n  fbq('track', \"InitiateCheckout\", _p, _eid ? { eventID: _eid } : {});\n})();\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "27"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "Meta Pixel - AddPaymentInfo",
+        "type": "html",
+        "tagId": "48",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function () {\n  if (!window.fbq) return;\n  var _arr = function (v) { return Array.isArray(v) ? v : []; };\n  var _str = function (v) { return (typeof v === 'string' || typeof v === 'number') && String(v).length ? String(v) : undefined; };\n  var _num = function (v) { var n = Number(v); return isFinite(n) ? n : 0; };\n  var _c = _arr({{DL - contents}});\n  var _ids = _arr({{DL - content_ids}});\n  var _eid = _str({{DL - event_id}});\n  var _xid = _str({{DL - external_id}});\n  var _ph = (_str({{DL - customer_phone}}) || '').replace(/\\D/g, '');\n  if (_ph.indexOf('01') === 0 && _ph.length === 11) _ph = '88' + _ph;\n  if (_ph.length < 11) _ph = '';\n  // Never re-initialize the Pixel here: a second init call without full user\n  // data makes it drop the click id (fbc) attached from the URL/cookies.\n  // Advanced matching happens once in the Base tag; hashed phone goes via CAPI.\n  var _p = {\n    content_type: _str({{DL - content_type}}) || 'product',\n    content_ids: _ids,\n    contents: _c.map(function (i) { return { id: String(i.id || i.content_id || ''), quantity: _num(i.quantity) || 1, item_price: _num(i.item_price || i.price) }; }),\n    num_items: _num({{DL - num_items}}),\n    value: _num({{DL - value}}),\n    currency: _str({{DL - currency}}) || 'BDT'\n  };\n  var _oid = _str({{DL - order_number}}) || _str({{DL - transaction_id}});\n  if (_oid) _p.order_id = _oid;\n  fbq('track', \"AddPaymentInfo\", _p, _eid ? { eventID: _eid } : {});\n})();\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "28"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "Meta Pixel - Purchase",
+        "type": "html",
+        "tagId": "49",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function () {\n  if (!window.fbq) return;\n  var _arr = function (v) { return Array.isArray(v) ? v : []; };\n  var _str = function (v) { return (typeof v === 'string' || typeof v === 'number') && String(v).length ? String(v) : undefined; };\n  var _num = function (v) { var n = Number(v); return isFinite(n) ? n : 0; };\n  var _c = _arr({{DL - contents}});\n  var _ids = _arr({{DL - content_ids}});\n  var _eid = _str({{DL - event_id}});\n  var _xid = _str({{DL - external_id}});\n  var _ph = (_str({{DL - customer_phone}}) || '').replace(/\\D/g, '');\n  if (_ph.indexOf('01') === 0 && _ph.length === 11) _ph = '88' + _ph;\n  if (_ph.length < 11) _ph = '';\n  // Never re-initialize the Pixel here: a second init call without full user\n  // data makes it drop the click id (fbc) attached from the URL/cookies.\n  // Advanced matching happens once in the Base tag; hashed phone goes via CAPI.\n  var _p = {\n    content_type: _str({{DL - content_type}}) || 'product',\n    content_ids: _ids,\n    contents: _c.map(function (i) { return { id: String(i.id || i.content_id || ''), quantity: _num(i.quantity) || 1, item_price: _num(i.item_price || i.price) }; }),\n    num_items: _num({{DL - num_items}}),\n    value: _num({{DL - value}}),\n    currency: _str({{DL - currency}}) || 'BDT'\n  };\n  var _oid = _str({{DL - order_number}}) || _str({{DL - transaction_id}});\n  if (_oid) _p.order_id = _oid;\n  fbq('track', \"Purchase\", _p, _eid ? { eventID: _eid } : {});\n})();\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "29"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "Meta Pixel - Search",
+        "type": "html",
+        "tagId": "50",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function () {\n  if (!window.fbq) return;\n  var _arr = function (v) { return Array.isArray(v) ? v : []; };\n  var _str = function (v) { return (typeof v === 'string' || typeof v === 'number') && String(v).length ? String(v) : undefined; };\n  var _num = function (v) { var n = Number(v); return isFinite(n) ? n : 0; };\n  var _c = _arr({{DL - contents}});\n  var _ids = _arr({{DL - content_ids}});\n  var _eid = _str({{DL - event_id}});\n  var _xid = _str({{DL - external_id}});\n  var _ph = (_str({{DL - customer_phone}}) || '').replace(/\\D/g, '');\n  if (_ph.indexOf('01') === 0 && _ph.length === 11) _ph = '88' + _ph;\n  if (_ph.length < 11) _ph = '';\n  // Never re-initialize the Pixel here: a second init call without full user\n  // data makes it drop the click id (fbc) attached from the URL/cookies.\n  // Advanced matching happens once in the Base tag; hashed phone goes via CAPI.\n  var _p = {\n    content_type: _str({{DL - content_type}}) || 'product',\n    content_ids: _ids,\n    contents: _c.map(function (i) { return { id: String(i.id || i.content_id || ''), quantity: _num(i.quantity) || 1, item_price: _num(i.item_price || i.price) }; }),\n    num_items: _num({{DL - num_items}}),\n    value: _num({{DL - value}}),\n    currency: _str({{DL - currency}}) || 'BDT'\n  };\n  var _oid = _str({{DL - order_number}}) || _str({{DL - transaction_id}});\n  if (_oid) _p.order_id = _oid;\n  fbq('track', \"Search\", _p, _eid ? { eventID: _eid } : {});\n})();\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "31"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "Meta Pixel - Contact",
+        "type": "html",
+        "tagId": "51",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function () {\n  if (!window.fbq) return;\n  var _arr = function (v) { return Array.isArray(v) ? v : []; };\n  var _str = function (v) { return (typeof v === 'string' || typeof v === 'number') && String(v).length ? String(v) : undefined; };\n  var _num = function (v) { var n = Number(v); return isFinite(n) ? n : 0; };\n  var _c = _arr({{DL - contents}});\n  var _ids = _arr({{DL - content_ids}});\n  var _eid = _str({{DL - event_id}});\n  var _xid = _str({{DL - external_id}});\n  var _ph = (_str({{DL - customer_phone}}) || '').replace(/\\D/g, '');\n  if (_ph.indexOf('01') === 0 && _ph.length === 11) _ph = '88' + _ph;\n  if (_ph.length < 11) _ph = '';\n  // Never re-initialize the Pixel here: a second init call without full user\n  // data makes it drop the click id (fbc) attached from the URL/cookies.\n  // Advanced matching happens once in the Base tag; hashed phone goes via CAPI.\n  var _p = {\n    content_type: _str({{DL - content_type}}) || 'product',\n    content_ids: _ids,\n    contents: _c.map(function (i) { return { id: String(i.id || i.content_id || ''), quantity: _num(i.quantity) || 1, item_price: _num(i.item_price || i.price) }; }),\n    num_items: _num({{DL - num_items}}),\n    value: _num({{DL - value}}),\n    currency: _str({{DL - currency}}) || 'BDT'\n  };\n  var _oid = _str({{DL - order_number}}) || _str({{DL - transaction_id}});\n  if (_oid) _p.order_id = _oid;\n  fbq('track', \"Contact\", _p, _eid ? { eventID: _eid } : {});\n})();\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "32"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "TikTok Pixel - Base",
+        "type": "html",
+        "tagId": "52",
+        "priority": {
+          "type": "INTEGER",
+          "key": "priority",
+          "value": "100"
+        },
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n!function (w, d, t) { w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];\nttq.methods=[\"page\",\"track\",\"identify\",\"instances\",\"debug\",\"on\",\"off\",\"once\",\"ready\",\"alias\",\"group\",\"enableCookie\",\"disableCookie\"];\nttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};\nfor(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);\nttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};\nttq.load=function(e,n){var r=\"https://analytics.tiktok.com/i18n/pixel/events.js\";\nttq._i=ttq._i||{};ttq._i[e]=[];ttq._i[e]._u=r;ttq._t=ttq._t||{};ttq._t[e]=+new Date;\nttq._o=ttq._o||{};ttq._o[e]=n||{};var o=d.createElement(\"script\");o.type=\"text/javascript\";\no.async=!0;o.src=r+\"?sdkid=\"+e+\"&lib=\"+t;var a=d.getElementsByTagName(\"script\")[0];\na.parentNode.insertBefore(o,a)};\nttq.load(\"{{CFG - TikTok Pixel ID}}\");\nvar _xid = {{DL - external_id}};\nif (typeof _xid === 'string' && _xid) ttq.identify({ external_id: _xid });\nttq.page();\n}(window, document, 'ttq');\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "33"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "TikTok Pixel - ViewContent",
+        "type": "html",
+        "tagId": "53",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function () {\n  if (!window.ttq) return;\n  var _arr = function (v) { return Array.isArray(v) ? v : []; };\n  var _str = function (v) { return (typeof v === 'string' || typeof v === 'number') && String(v).length ? String(v) : undefined; };\n  var _num = function (v) { var n = Number(v); return isFinite(n) ? n : 0; };\n  var _c = _arr({{DL - contents}});\n  var _ids = _arr({{DL - content_ids}});\n  var _eid = _str({{DL - event_id}});\n  var _xid = _str({{DL - external_id}});\n  var _ph = (_str({{DL - customer_phone}}) || '').replace(/\\D/g, '');\n  if (_ph.indexOf('01') === 0 && _ph.length === 11) _ph = '88' + _ph;\n  if (_ph.length < 11) _ph = '';\n  if (_ph || _xid) {\n    var _id = {};\n    if (_xid) _id.external_id = _xid;\n    if (_ph) _id.phone_number = '+' + _ph;\n    ttq.identify(_id);\n  }\n  var _p = {\n    contents: _c.map(function (i) { return { content_id: String(i.content_id || i.id || ''), content_name: i.content_name, quantity: _num(i.quantity) || 1, price: _num(i.price || i.item_price) }; }),\n    content_type: 'product',\n    value: _num({{DL - value}}),\n    currency: _str({{DL - currency}}) || 'BDT'\n  };\n  var _first = _c[0] ? (_c[0].content_id || _c[0].id) : _ids[0];\n  if (_first) _p.content_id = String(_first);\n  ttq.track(\"ViewContent\", _p, _eid ? { event_id: _eid } : {});\n})();\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "24"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "TikTok Pixel - AddToCart",
+        "type": "html",
+        "tagId": "54",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function () {\n  if (!window.ttq) return;\n  var _arr = function (v) { return Array.isArray(v) ? v : []; };\n  var _str = function (v) { return (typeof v === 'string' || typeof v === 'number') && String(v).length ? String(v) : undefined; };\n  var _num = function (v) { var n = Number(v); return isFinite(n) ? n : 0; };\n  var _c = _arr({{DL - contents}});\n  var _ids = _arr({{DL - content_ids}});\n  var _eid = _str({{DL - event_id}});\n  var _xid = _str({{DL - external_id}});\n  var _ph = (_str({{DL - customer_phone}}) || '').replace(/\\D/g, '');\n  if (_ph.indexOf('01') === 0 && _ph.length === 11) _ph = '88' + _ph;\n  if (_ph.length < 11) _ph = '';\n  if (_ph || _xid) {\n    var _id = {};\n    if (_xid) _id.external_id = _xid;\n    if (_ph) _id.phone_number = '+' + _ph;\n    ttq.identify(_id);\n  }\n  var _p = {\n    contents: _c.map(function (i) { return { content_id: String(i.content_id || i.id || ''), content_name: i.content_name, quantity: _num(i.quantity) || 1, price: _num(i.price || i.item_price) }; }),\n    content_type: 'product',\n    value: _num({{DL - value}}),\n    currency: _str({{DL - currency}}) || 'BDT'\n  };\n  var _first = _c[0] ? (_c[0].content_id || _c[0].id) : _ids[0];\n  if (_first) _p.content_id = String(_first);\n  ttq.track(\"AddToCart\", _p, _eid ? { event_id: _eid } : {});\n})();\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "26"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "TikTok Pixel - InitiateCheckout",
+        "type": "html",
+        "tagId": "55",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function () {\n  if (!window.ttq) return;\n  var _arr = function (v) { return Array.isArray(v) ? v : []; };\n  var _str = function (v) { return (typeof v === 'string' || typeof v === 'number') && String(v).length ? String(v) : undefined; };\n  var _num = function (v) { var n = Number(v); return isFinite(n) ? n : 0; };\n  var _c = _arr({{DL - contents}});\n  var _ids = _arr({{DL - content_ids}});\n  var _eid = _str({{DL - event_id}});\n  var _xid = _str({{DL - external_id}});\n  var _ph = (_str({{DL - customer_phone}}) || '').replace(/\\D/g, '');\n  if (_ph.indexOf('01') === 0 && _ph.length === 11) _ph = '88' + _ph;\n  if (_ph.length < 11) _ph = '';\n  if (_ph || _xid) {\n    var _id = {};\n    if (_xid) _id.external_id = _xid;\n    if (_ph) _id.phone_number = '+' + _ph;\n    ttq.identify(_id);\n  }\n  var _p = {\n    contents: _c.map(function (i) { return { content_id: String(i.content_id || i.id || ''), content_name: i.content_name, quantity: _num(i.quantity) || 1, price: _num(i.price || i.item_price) }; }),\n    content_type: 'product',\n    value: _num({{DL - value}}),\n    currency: _str({{DL - currency}}) || 'BDT'\n  };\n  var _first = _c[0] ? (_c[0].content_id || _c[0].id) : _ids[0];\n  if (_first) _p.content_id = String(_first);\n  ttq.track(\"InitiateCheckout\", _p, _eid ? { event_id: _eid } : {});\n})();\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "27"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "TikTok Pixel - PlaceAnOrder",
+        "type": "html",
+        "tagId": "56",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function () {\n  if (!window.ttq) return;\n  var _arr = function (v) { return Array.isArray(v) ? v : []; };\n  var _str = function (v) { return (typeof v === 'string' || typeof v === 'number') && String(v).length ? String(v) : undefined; };\n  var _num = function (v) { var n = Number(v); return isFinite(n) ? n : 0; };\n  var _c = _arr({{DL - contents}});\n  var _ids = _arr({{DL - content_ids}});\n  var _eid = _str({{DL - event_id}});\n  var _xid = _str({{DL - external_id}});\n  var _ph = (_str({{DL - customer_phone}}) || '').replace(/\\D/g, '');\n  if (_ph.indexOf('01') === 0 && _ph.length === 11) _ph = '88' + _ph;\n  if (_ph.length < 11) _ph = '';\n  if (_ph || _xid) {\n    var _id = {};\n    if (_xid) _id.external_id = _xid;\n    if (_ph) _id.phone_number = '+' + _ph;\n    ttq.identify(_id);\n  }\n  var _p = {\n    contents: _c.map(function (i) { return { content_id: String(i.content_id || i.id || ''), content_name: i.content_name, quantity: _num(i.quantity) || 1, price: _num(i.price || i.item_price) }; }),\n    content_type: 'product',\n    value: _num({{DL - value}}),\n    currency: _str({{DL - currency}}) || 'BDT'\n  };\n  var _first = _c[0] ? (_c[0].content_id || _c[0].id) : _ids[0];\n  if (_first) _p.content_id = String(_first);\n  ttq.track(\"PlaceAnOrder\", _p, _eid ? { event_id: _eid } : {});\n})();\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "29"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "TikTok Pixel - Search",
+        "type": "html",
+        "tagId": "57",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function () {\n  if (!window.ttq) return;\n  var _arr = function (v) { return Array.isArray(v) ? v : []; };\n  var _str = function (v) { return (typeof v === 'string' || typeof v === 'number') && String(v).length ? String(v) : undefined; };\n  var _num = function (v) { var n = Number(v); return isFinite(n) ? n : 0; };\n  var _c = _arr({{DL - contents}});\n  var _ids = _arr({{DL - content_ids}});\n  var _eid = _str({{DL - event_id}});\n  var _xid = _str({{DL - external_id}});\n  var _ph = (_str({{DL - customer_phone}}) || '').replace(/\\D/g, '');\n  if (_ph.indexOf('01') === 0 && _ph.length === 11) _ph = '88' + _ph;\n  if (_ph.length < 11) _ph = '';\n  if (_ph || _xid) {\n    var _id = {};\n    if (_xid) _id.external_id = _xid;\n    if (_ph) _id.phone_number = '+' + _ph;\n    ttq.identify(_id);\n  }\n  var _p = {\n    contents: _c.map(function (i) { return { content_id: String(i.content_id || i.id || ''), content_name: i.content_name, quantity: _num(i.quantity) || 1, price: _num(i.price || i.item_price) }; }),\n    content_type: 'product',\n    value: _num({{DL - value}}),\n    currency: _str({{DL - currency}}) || 'BDT'\n  };\n  var _first = _c[0] ? (_c[0].content_id || _c[0].id) : _ids[0];\n  if (_first) _p.content_id = String(_first);\n  ttq.track(\"Search\", _p, _eid ? { event_id: _eid } : {});\n})();\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "31"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "TikTok Pixel - Contact",
+        "type": "html",
+        "tagId": "58",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function () {\n  if (!window.ttq) return;\n  var _arr = function (v) { return Array.isArray(v) ? v : []; };\n  var _str = function (v) { return (typeof v === 'string' || typeof v === 'number') && String(v).length ? String(v) : undefined; };\n  var _num = function (v) { var n = Number(v); return isFinite(n) ? n : 0; };\n  var _c = _arr({{DL - contents}});\n  var _ids = _arr({{DL - content_ids}});\n  var _eid = _str({{DL - event_id}});\n  var _xid = _str({{DL - external_id}});\n  var _ph = (_str({{DL - customer_phone}}) || '').replace(/\\D/g, '');\n  if (_ph.indexOf('01') === 0 && _ph.length === 11) _ph = '88' + _ph;\n  if (_ph.length < 11) _ph = '';\n  if (_ph || _xid) {\n    var _id = {};\n    if (_xid) _id.external_id = _xid;\n    if (_ph) _id.phone_number = '+' + _ph;\n    ttq.identify(_id);\n  }\n  var _p = {\n    contents: _c.map(function (i) { return { content_id: String(i.content_id || i.id || ''), content_name: i.content_name, quantity: _num(i.quantity) || 1, price: _num(i.price || i.item_price) }; }),\n    content_type: 'product',\n    value: _num({{DL - value}}),\n    currency: _str({{DL - currency}}) || 'BDT'\n  };\n  var _first = _c[0] ? (_c[0].content_id || _c[0].id) : _ids[0];\n  if (_first) _p.content_id = String(_first);\n  ttq.track(\"Contact\", _p, _eid ? { event_id: _eid } : {});\n})();\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "32"
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "Microsoft Clarity",
+        "type": "html",
+        "tagId": "59",
+        "priority": {
+          "type": "INTEGER",
+          "key": "priority",
+          "value": "100"
+        },
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};\nt=l.createElement(r);t.async=1;t.src=\"https://www.clarity.ms/tag/\"+i;\ny=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,\"clarity\",\"script\",\"{{CFG - Clarity Project ID}}\");\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "33"
+        ]
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "CE - view_page",
+        "type": "CUSTOM_EVENT",
+        "triggerId": "23",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "view_page"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "CE - view_item",
+        "type": "CUSTOM_EVENT",
+        "triggerId": "24",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "view_item"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "CE - view_item_list",
+        "type": "CUSTOM_EVENT",
+        "triggerId": "25",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "view_item_list"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "CE - add_to_cart",
+        "type": "CUSTOM_EVENT",
+        "triggerId": "26",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "add_to_cart"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "CE - begin_checkout",
+        "type": "CUSTOM_EVENT",
+        "triggerId": "27",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "begin_checkout"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "CE - add_payment_info",
+        "type": "CUSTOM_EVENT",
+        "triggerId": "28",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "add_payment_info"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "CE - purchase",
+        "type": "CUSTOM_EVENT",
+        "triggerId": "29",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "purchase"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "CE - scroll_depth",
+        "type": "CUSTOM_EVENT",
+        "triggerId": "30",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "scroll_depth"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "CE - search",
+        "type": "CUSTOM_EVENT",
+        "triggerId": "31",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "search"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "CE - contact",
+        "type": "CUSTOM_EVENT",
+        "triggerId": "32",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "contact"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "All Pages",
+        "type": "PAGEVIEW",
+        "triggerId": "33"
+      }
+    ],
+    "variable": [
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "CFG - GA4 Measurement ID",
+        "type": "c",
+        "variableId": "1",
+        "notes": "Replace per project.",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "G-XXXXXXXXXX"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "CFG - Meta Pixel ID",
+        "type": "c",
+        "variableId": "2",
+        "notes": "Replace per project.",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "000000000000000"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "CFG - TikTok Pixel ID",
+        "type": "c",
+        "variableId": "3",
+        "notes": "Replace per project.",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "XXXXXXXXXXXXXXXXXXXX"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "CFG - Clarity Project ID",
+        "type": "c",
+        "variableId": "4",
+        "notes": "Replace per project.",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "xxxxxxxxxx"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - event_id",
+        "type": "v",
+        "variableId": "5",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "event_id"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - surface",
+        "type": "v",
+        "variableId": "6",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "surface"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - external_id",
+        "type": "v",
+        "variableId": "7",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "external_id"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - fbp",
+        "type": "v",
+        "variableId": "8",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "fbp"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - fbc",
+        "type": "v",
+        "variableId": "9",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "fbc"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - ttclid",
+        "type": "v",
+        "variableId": "10",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "ttclid"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - ttp",
+        "type": "v",
+        "variableId": "11",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "ttp"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - value",
+        "type": "v",
+        "variableId": "12",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "value"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - currency",
+        "type": "v",
+        "variableId": "13",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "currency"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - content_ids",
+        "type": "v",
+        "variableId": "14",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "content_ids"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - contents",
+        "type": "v",
+        "variableId": "15",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "contents"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - content_type",
+        "type": "v",
+        "variableId": "16",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "content_type"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - num_items",
+        "type": "v",
+        "variableId": "17",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "num_items"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - percent_scrolled",
+        "type": "v",
+        "variableId": "18",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "percent_scrolled"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - transaction_id",
+        "type": "v",
+        "variableId": "19",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "ecommerce.transaction_id"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - items",
+        "type": "v",
+        "variableId": "20",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "ecommerce.items"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - order_number",
+        "type": "v",
+        "variableId": "21",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "order_number"
+          }
+        ]
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "name": "DL - customer_phone",
+        "type": "v",
+        "variableId": "22",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "customer_phone"
+          }
+        ]
+      }
+    ],
+    "builtInVariable": [
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "type": "PAGE_URL",
+        "name": "Page URL"
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "type": "PAGE_HOSTNAME",
+        "name": "Page Hostname"
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "type": "PAGE_PATH",
+        "name": "Page Path"
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "type": "REFERRER",
+        "name": "Referrer"
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "type": "EVENT",
+        "name": "Event"
+      }
+    ],
+    "fingerprint": "0"
+  }
+}
